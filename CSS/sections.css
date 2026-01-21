@@ -1,73 +1,12 @@
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url("../assets/images/hero-bread.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 0 8%;
+section {
+  padding: 4rem 1.5rem;
 }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(59, 36, 22, 0.85),
-    rgba(59, 36, 22, 0.6)
-  );
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero-content {
-  position: relative;
-  max-width: 600px;
-  color: #fff;
-  z-index: 1;
-}
-
-.hero h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 4rem;
-  margin: 1rem 0;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-.section {
-  padding: 6rem 8%;
-}
-
-.section h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  color: var(--color-primary);
-  margin-bottom: 1.5rem;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.about-image img {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-strong);
-}
-
-.location iframe {
-  width: 100%;
-  height: 350px;
-  border: none;
-  border-radius: var(--radius-md);
-  margin: 2rem 0;
-}
-
-.info-list {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+section + section {
+  border-top: 1px solid rgba(0,0,0,.05);
 }
