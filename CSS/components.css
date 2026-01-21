@@ -1,18 +1,18 @@
 .btn-whatsapp {
   display: inline-block;
-  margin-top: 32px;
-  padding: 16px 32px;
-  background: var(--green-open);
-  color: white;
-  border-radius: 40px;
-  font-weight: 600;
-  transition: transform .3s, box-shadow .3s;
+  background: var(--color-whatsapp);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-whatsapp:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,.2);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
 }
+
 
 .badge-open {
   background: rgba(31,164,99,.15);
