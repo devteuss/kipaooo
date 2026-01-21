@@ -5,32 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Padaria Ki Pão</title>
-  <meta name="description" content="Padaria Ki Pão – tradição, pães quentinhos e sabor todos os dias">
+  <meta name="description" content="Padaria Ki Pão – Pães, doces e bolos artesanais todos os dias">
 
-  <!-- BASE PARA GITHUB PAGES -->
+  <!-- BASE GITHUB PAGES -->
   <base href="/kipaooo/">
 
-  <!-- CSS (PASTA EM MAIÚSCULO) -->
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#c47a2c">
+
+  <!-- CSS (PASTA MAIÚSCULA) -->
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/animations.css">
 </head>
 
 <body>
 
-  <!-- HEADER / HERO -->
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+    <div class="hero-content reveal">
       <h1>Padaria Ki Pão</h1>
       <p>Forno aceso, tradição e sabor todos os dias</p>
 
       <div class="hero-buttons">
         <a href="https://wa.me/5518996955697" target="_blank" class="btn">
-          WhatsApp
+          Pedir no WhatsApp
         </a>
         <a href="#cardapio" class="btn outline">
-          Cardápio
+          Ver Cardápio
         </a>
         <a href="#contato" class="btn outline">
           Como chegar
@@ -41,40 +45,40 @@
 
   <!-- STATUS -->
   <section class="status">
-    <span id="open-status">Aberto agora</span>
+    <span id="open-status">Verificando horário...</span>
   </section>
 
   <!-- CARDÁPIO -->
-  <section id="cardapio" class="section">
+  <section id="cardapio" class="section reveal">
     <h2>Nossos Produtos</h2>
 
     <div class="products">
-      <div class="product">
+      <div class="product reveal">
         <h3>Pães</h3>
-        <p>Pães fresquinhos todos os dias</p>
+        <p>Pães fresquinhos saindo do forno o dia todo.</p>
       </div>
 
-      <div class="product">
+      <div class="product reveal">
         <h3>Bolos</h3>
-        <p>Bolos caseiros e artesanais</p>
+        <p>Bolos caseiros feitos diariamente.</p>
       </div>
 
-      <div class="product">
+      <div class="product reveal">
         <h3>Doces</h3>
-        <p>Doces feitos com carinho</p>
+        <p>Doces artesanais irresistíveis.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="section">
+  <section id="contato" class="section reveal">
     <h2>Contato</h2>
-
     <p>📍 Rua Adelino Duarte, 490 – Quatá/SP</p>
     <p>📞 (18) 99695-5697</p>
+    <p>🕔 Todos os dias das 5h às 22h</p>
   </section>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <!-- WHATSAPP FLUTUANTE -->
   <a
     href="https://wa.me/5518996955697"
     target="_blank"
@@ -87,6 +91,7 @@
   <!-- JS -->
   <script src="js/main.js"></script>
   <script src="js/scroll-effects.js"></script>
+  <script src="js/modal.js"></script>
 
 </body>
 </html>
