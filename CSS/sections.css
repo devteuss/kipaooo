@@ -10,3 +10,27 @@ section {
 section + section {
   border-top: 1px solid rgba(0,0,0,.05);
 }
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      rgba(43, 26, 18, 0.55),
+      rgba(43, 26, 18, 0.85)
+    ),
+    url("../assets/images/hero.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f3e9e1;
+  margin: 1.5rem 0;
+}
