@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Padaria Ki Pão • Tradição e Sabor</title>
+  <title>Padaria Ki Pão | Tradição em Cada Fornada</title>
 
-  <!-- Favicon & PWA -->
-  <link rel="icon" href="assets/icons/favicon.png">
+  <!-- SEO -->
+  <meta name="description" content="Padaria Ki Pão em Quatá-SP. Pães artesanais, bolos, salgados e atendimento pelo WhatsApp." />
+
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/favicon.png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -21,11 +24,12 @@
 
 <body>
 
-<!-- ================= SKELETON LOADER ================= -->
-<div id="skeleton">
-  <div class="skeleton-logo"></div>
-  <div class="skeleton-line"></div>
-  <div class="skeleton-line small"></div>
+<!-- ================= LOADER GLOBAL ================= -->
+<div id="loader">
+  <div class="loader-box">
+    <span class="loader-logo">KI PÃO</span>
+    <span class="loader-line"></span>
+  </div>
 </div>
 
 <!-- ================= WHATSAPP FLOAT ================= -->
@@ -35,101 +39,127 @@
    aria-label="WhatsApp">
 </a>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HEADER ================= -->
 <header class="hero" data-parallax>
   <div class="hero-overlay"></div>
 
-  <img src="assets/images/logo.png"
-       alt="Padaria Ki Pão"
-       class="logo logo-float reveal">
+  <div class="hero-content">
 
-  <h1 class="reveal">Padaria Ki Pão</h1>
+    <img src="assets/images/logo.png"
+         alt="Padaria Ki Pão"
+         class="logo logo-float reveal">
 
-  <p class="reveal">
-    Tradição, forno quente e o verdadeiro sabor do pão feito todos os dias.
-  </p>
+    <h1 class="reveal">
+      Padaria Ki Pão
+    </h1>
 
-  <div class="hero-actions reveal">
-    <button class="btn primary magnetic"
-            data-open-modal>
-      Ver Cardápio
-    </button>
+    <p class="hero-subtitle reveal">
+      Pães artesanais, bolos e salgados feitos todos os dias
+      desde as 5h da manhã.
+    </p>
 
-    <a href="https://wa.me/5518996955697" target="_blank">
-      <button class="btn outline magnetic">
-        Pedir no WhatsApp
+    <div class="hero-actions reveal">
+      <button class="btn primary magnetic" data-open-modal>
+        Ver Cardápio
       </button>
-    </a>
-  </div>
 
-  <span id="status" class="status aberto reveal">
-    🟢 Aberto agora • Fecha às 22h
-  </span>
+      <a href="https://wa.me/5518996955697" target="_blank">
+        <button class="btn outline magnetic">
+          Pedir no WhatsApp
+        </button>
+      </a>
+    </div>
+
+    <div id="status" class="status aberto reveal">
+      🟢 Aberto agora • Fecha às 22h
+    </div>
+
+  </div>
 </header>
 
-<!-- ================= DESTAQUES ================= -->
+<!-- ================= SEÇÃO: DESTAQUES ================= -->
+<main>
+
 <section class="section">
-  <h2 class="section-title reveal">Destaques do Dia</h2>
+  <div class="container">
 
-  <div class="grid">
-    <article class="card reveal">
-      <img src="assets/images/paes.jpg" alt="Pães artesanais">
-      <h3>Pães Artesanais</h3>
-      <p>Crocantes por fora, macios por dentro.</p>
-    </article>
+    <h2 class="section-title reveal">
+      Destaques do Dia
+    </h2>
 
-    <article class="card reveal">
-      <img src="assets/images/doces.jpg" alt="Doces e bolos">
-      <h3>Bolos & Doces</h3>
-      <p>Receitas tradicionais todos os dias.</p>
-    </article>
+    <div class="grid-products">
 
-    <article class="card reveal">
-      <img src="assets/images/salgados.jpg" alt="Salgados">
-      <h3>Salgados</h3>
-      <p>Perfeitos para qualquer hora.</p>
-    </article>
+      <article class="product-card reveal">
+        <img src="assets/images/paes.jpg" alt="Pães">
+        <h3>Pães Artesanais</h3>
+        <p>Crocantes por fora, macios por dentro.</p>
+      </article>
+
+      <article class="product-card reveal">
+        <img src="assets/images/doces.jpg" alt="Bolos">
+        <h3>Bolos & Doces</h3>
+        <p>Receitas caseiras com sabor de infância.</p>
+      </article>
+
+      <article class="product-card reveal">
+        <img src="assets/images/salgados.jpg" alt="Salgados">
+        <h3>Salgados</h3>
+        <p>Perfeitos para qualquer hora do dia.</p>
+      </article>
+
+    </div>
   </div>
 </section>
 
 <!-- ================= SOBRE ================= -->
 <section class="section light-bg">
-  <div class="about reveal">
-    <div>
+  <div class="container about-grid reveal">
+
+    <div class="about-text">
       <h2>Sobre a Ki Pão</h2>
       <p>
-        A Padaria Ki Pão nasceu para trazer o verdadeiro sabor do pão fresco,
-        feito com cuidado, tradição e ingredientes de qualidade.
+        A Padaria Ki Pão nasceu do amor pelo pão bem feito.
+        Aqui cada fornada carrega tradição, cuidado e qualidade,
+        servindo nossa comunidade todos os dias.
       </p>
     </div>
 
-    <img src="assets/images/hero.jpg"
-         alt="Interior da padaria">
+    <div class="about-image">
+      <img src="assets/images/hero.jpg" alt="Interior da padaria">
+    </div>
+
   </div>
 </section>
 
-<!-- ================= MAPA ================= -->
+<!-- ================= LOCALIZAÇÃO ================= -->
 <section class="section">
-  <h2 class="section-title reveal">Onde Estamos</h2>
+  <div class="container">
 
-  <div class="map reveal">
-    <iframe
-      src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
-      loading="lazy">
-    </iframe>
+    <h2 class="section-title reveal">
+      Onde Estamos
+    </h2>
+
+    <div class="map-box reveal">
+      <iframe
+        src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
   </div>
 </section>
 
-<!-- ================= INFO ================= -->
+<!-- ================= INFORMAÇÕES ================= -->
 <section class="section dark">
-  <div class="info-grid reveal">
+  <div class="container info-grid reveal">
+
     <div>
       <h4>📍 Endereço</h4>
       <p>R. Adelino Duarte, 490<br>Quatá - SP</p>
     </div>
 
     <div>
-      <h4>⏰ Funcionamento</h4>
+      <h4>⏰ Horário</h4>
       <p>Todos os dias<br>05h às 22h</p>
     </div>
 
@@ -137,8 +167,11 @@
       <h4>📲 WhatsApp</h4>
       <p>(18) 99695-5697</p>
     </div>
+
   </div>
 </section>
+
+</main>
 
 <!-- ================= MODAL CARDÁPIO ================= -->
 <div class="modal" id="modal-menu">
@@ -146,7 +179,7 @@
     <button class="modal-close">×</button>
 
     <h2>Cardápio</h2>
-    <p>Consulte nossos produtos diretamente no WhatsApp.</p>
+    <p>Faça seu pedido direto pelo WhatsApp.</p>
 
     <a href="https://wa.me/5518996955697" target="_blank">
       <button class="btn primary magnetic">
@@ -156,21 +189,14 @@
   </div>
 </div>
 
-<footer>
-  © 2026 Padaria Ki Pão • Todos os direitos reservados
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 Padaria Ki Pão • Todos os direitos reservados</p>
 </footer>
 
-<!-- JS -->
+<!-- ================= JS ================= -->
 <script src="js/main.js"></script>
 <script src="js/scroll-effects.js"></script>
-
-  <header class="hero" data-parallax>
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <!-- TUDO que estava dentro do header fica aqui -->
-  </div>
-</header>
 
 </body>
 </html>
