@@ -50,3 +50,11 @@
   70% { box-shadow: 0 0 0 8px rgba(37,211,102,0); }
   100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
 }
+
+footer {
+  background: var(--brown-900);
+  color: #e7d6c8;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: .9rem;
+}
