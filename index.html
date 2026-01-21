@@ -3,39 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Padaria Ki Pão</title>
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <title>Padaria Ki Pão • Tradição Artesanal</title>
+
+  <link rel="icon" href="assets/icons/favicon.png" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/light.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="skeleton">
-  <div class="skeleton-hero"></div>
+<!-- SKELETON -->
+<div id="skeleton"></div>
 
-  <div class="skeleton-section">
-    <div class="skeleton-line title"></div>
-    <div class="skeleton-line"></div>
-    <div class="skeleton-line short"></div>
-  </div>
-
-  <div class="skeleton-section">
-    <div class="skeleton-line title"></div>
-    <div class="skeleton-line"></div>
-    <div class="skeleton-line short"></div>
-  </div>
-</div>
-
-  
+<!-- HERO -->
 <header class="hero">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
+  <div class="container">
     <span class="status-open">
       <span class="dot"></span> Aberto agora
     </span>
@@ -43,7 +35,8 @@
     <h1>Padaria Ki Pão</h1>
 
     <p>
-      Tradição artesanal, forno quente e sabor que conquista gerações.
+      Tradição artesanal, pães quentinhos e doces preparados
+      diariamente com carinho.
     </p>
 
     <a
@@ -56,46 +49,74 @@
   </div>
 </header>
 
-<section class="section about">
-  <div class="about-grid">
-    <div>
-      <h2>Artesanal de Verdade</h2>
-      <p>
-        Todos os nossos pães e doces são preparados diariamente,
-        com receitas tradicionais, ingredientes selecionados
-        e muito cuidado em cada detalhe.
-      </p>
-    </div>
+<!-- SOBRE -->
+<section class="section feature">
+  <div class="container">
+    <h2>Artesanal de Verdade</h2>
 
-    <div class="about-image">
-      <img src="assets/images/padaria.jpg" alt="Padaria Ki Pão">
+    <p>
+      Cada pão é preparado com fermentação cuidadosa,
+      ingredientes selecionados e o respeito pelas receitas
+      que atravessam gerações.
+    </p>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="section">
+  <div class="container">
+    <h2>Destaques do Dia</h2>
+
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="assets/images/pao.jpg" alt="Pão francês">
+        <h3>Pão Francês</h3>
+        <p>Crocante por fora, macio por dentro.</p>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/images/bolo.jpg" alt="Bolos">
+        <h3>Bolos Caseiros</h3>
+        <p>Sabor de casa, feito todos os dias.</p>
+      </article>
+
+      <article class="product-card">
+        <img src="assets/images/salgado.jpg" alt="Salgados">
+        <h3>Salgados</h3>
+        <p>Perfeitos para qualquer hora.</p>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- LOCALIZAÇÃO -->
 <section class="section location">
-  <h2>Onde Estamos</h2>
+  <div class="container">
+    <h2>Onde Estamos</h2>
 
-  <iframe
-    src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
-    loading="lazy">
-  </iframe>
+    <iframe
+      src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
+      loading="lazy">
+    </iframe>
 
-  <ul class="info-list">
-    <li>📍 R. Adelino Duarte, 490 – Quatá/SP</li>
-    <li>⏰ Todos os dias – 05h às 22h</li>
-    <li>📲 (18) 99695-5697</li>
-  </ul>
+    <ul class="info-list">
+      <li>📍 R. Adelino Duarte, 490 – Quatá/SP</li>
+      <li>⏰ Todos os dias • 05h às 22h</li>
+      <li>📲 (18) 99695-5697</li>
+    </ul>
+  </div>
 </section>
 
-<footer class="footer">
+<!-- FOOTER -->
+<footer>
   © 2026 Padaria Ki Pão • Todos os direitos reservados
 </footer>
 
+<!-- JS -->
 <script src="js/loader.js"></script>
 <script src="js/main.js"></script>
 <script src="js/scroll-effects.js"></script>
 <script src="js/modal.js"></script>
 
 </body>
-
+</html>
