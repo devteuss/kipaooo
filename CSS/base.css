@@ -1,59 +1,32 @@
-body {
-  font-family: var(--font-text);
-  background: var(--beige-100);
-  color: var(--brown-900);
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 24px;
-  margin: auto;
-}
-
-.section {
-  padding: 100px 0;
-}
-
-h1, h2 {
-  font-family: var(--font-title);
-}
-
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-}
-
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body);
   background: var(--color-bg);
-  color: var(--text-dark);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--color-primary);
+}
+
+p {
+  font-size: 1.05rem;
+  max-width: 60ch;
 }
 
 a {
+  color: var(--color-secondary);
   text-decoration: none;
-  color: inherit;
+  transition: var(--transition);
 }
 
-section {
-  padding: 6rem 8%;
+a:hover {
+  color: var(--color-primary);
 }
