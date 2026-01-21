@@ -50,3 +50,8 @@ document.querySelectorAll(".btn").forEach(btn => {
     btn.style.transform = "";
   });
 });
+window.addEventListener("load", () => {
+  document.querySelectorAll(".skeleton").forEach(el => {
+    el.classList.remove("skeleton");
+  });
+});
