@@ -1,20 +1,29 @@
 :root {
-  --color-bg: #F7EFE5;
-  --color-primary: #3B2416;
-  --color-secondary: #6B3F1D;
-  --color-accent: #C9A24D;
-  --color-whatsapp: #25D366;
+  /* Cores */
+  --brown-900: #2b1a12;
+  --brown-700: #4a2f23;
+  --brown-500: #7a4a32;
+  --brown-300: #c8a48a;
+  --cream-100: #f7f2ec;
 
-  --text-dark: #2A1A12;
-  --text-light: #FFFFFF;
+  --color-primary: var(--brown-700);
+  --color-secondary: var(--brown-500);
+  --color-bg: var(--cream-100);
+  --color-text: #2a1b14;
 
+  /* Tipografia */
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
   --radius-sm: 6px;
   --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-lg: 24px;
 
-  --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
-  --shadow-strong: 0 20px 60px rgba(0,0,0,0.15);
+  /* Sombras */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,.08);
+  --shadow-strong: 0 25px 60px rgba(0,0,0,.15);
 
-  --transition-fast: 0.2s ease;
-  --transition: 0.4s ease;
+  /* Transições */
+  --transition: 0.3s ease;
 }
