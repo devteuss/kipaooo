@@ -1,0 +1,14 @@
+:root {
+  --brown-900: #2b1b12;
+  --brown-700: #4a2c1a;
+  --brown-500: #7a4a2e;
+
+  --beige-100: #f6efe8;
+  --beige-200: #ede3d9;
+
+  --gold-500: #c8a46e;
+  --green-open: #1fa463;
+
+  --font-title: 'Playfair Display', serif;
+  --font-text: 'Inter', sans-serif;
+}
