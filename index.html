@@ -3,94 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Padaria Ki Pão • Tradição que dá água na boca</title>
 
-  <link rel="icon" href="favicon-kipao.png">
-  <link rel="stylesheet" href="style.css">
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/icons/favicon.png">
 
+  <!-- CSS BASE DO PROJETO -->
+  <link rel="stylesheet" href="light.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <!-- FONTES -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <h1>KI PÃO</h1>
+<!-- LOADER / SKELETON -->
+<div id="loader" class="loader">
+  <span>KI PÃO</span>
 </div>
 
 <!-- BOTÃO WHATSAPP -->
-<a href="https://wa.me/5518996955697" class="whatsapp magnetic" target="_blank">💬</a>
+<a href="https://wa.me/5518996955697"
+   class="whatsapp-float magnetic"
+   target="_blank"
+   aria-label="WhatsApp">
+</a>
 
 <!-- HERO -->
 <header class="hero parallax">
-  <img src="logo-kipao-moderna.png" alt="Padaria Ki Pão" class="logo reveal">
+  <div class="hero-overlay"></div>
+
+  <img src="assets/images/logo-kipao-moderna.png"
+       alt="Padaria Ki Pão"
+       class="hero-logo reveal">
 
   <h1 class="reveal">Padaria Ki Pão</h1>
 
-  <p class="reveal">
-    Tradição, forno quente e sabor que conquista gerações todos os dias.
+  <p class="hero-subtitle reveal">
+    Tradição, forno quente e sabor que conquista gerações.
   </p>
 
   <div class="hero-actions reveal">
-    <a href="https://wa.me/5518996955697" target="_blank">
-      <button class="btn btn-primary magnetic">📲 Pedir no WhatsApp</button>
-    </a>
+    <button class="btn primary magnetic" data-action="whatsapp">
+      Pedir no WhatsApp
+    </button>
 
-    <a href="#produtos">
-      <button class="btn btn-outline magnetic">🥖 Ver Destaques</button>
-    </a>
+    <button class="btn outline magnetic" data-scroll="#produtos">
+      Ver Produtos
+    </button>
   </div>
 </header>
 
 <!-- PRODUTOS -->
-<section id="produtos">
-  <h2 class="title reveal">Destaques do Dia</h2>
+<section id="produtos" class="section">
+  <h2 class="section-title reveal">Destaques do Dia</h2>
 
-  <div class="grid">
-    <div class="card reveal">
-      <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=80">
-      <div class="card-content">
-        <h3>Pão Francês</h3>
-        <p>Crocante por fora, macio por dentro.</p>
-      </div>
-    </div>
+  <div class="products-grid">
+    <article class="product-card reveal" data-modal="produto">
+      <img src="assets/images/pao-frances.jpg" alt="Pão Francês">
+      <h3>Pão Francês</h3>
+      <p>Crocante por fora, macio por dentro.</p>
+    </article>
 
-    <div class="card reveal">
-      <img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=900&q=80">
-      <div class="card-content">
-        <h3>Bolos Caseiros</h3>
-        <p>Receitas tradicionais todos os dias.</p>
-      </div>
-    </div>
+    <article class="product-card reveal" data-modal="produto">
+      <img src="assets/images/bolos.jpg" alt="Bolos Caseiros">
+      <h3>Bolos Caseiros</h3>
+      <p>Receitas tradicionais todos os dias.</p>
+    </article>
 
-    <div class="card reveal">
-      <img src="https://images.unsplash.com/photo-1606312619344-86f38c5a6b38?auto=format&fit=crop&w=900&q=80">
-      <div class="card-content">
-        <h3>Salgados</h3>
-        <p>Perfeitos para qualquer hora.</p>
-      </div>
-    </div>
+    <article class="product-card reveal" data-modal="produto">
+      <img src="assets/images/salgados.jpg" alt="Salgados">
+      <h3>Salgados</h3>
+      <p>Perfeitos para qualquer hora.</p>
+    </article>
   </div>
 </section>
 
 <!-- SOBRE -->
-<section class="sobre">
-  <h2 class="title reveal">Nossa História</h2>
-
-  <div class="about">
-    <div class="reveal">
+<section class="section about-section">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2>Nossa História</h2>
       <p>
         A Padaria Ki Pão nasceu do amor pelo pão bem feito,
         daquele cheiro que invade a rua logo cedo.
-        Tradição, qualidade e carinho em cada fornada.
+        Aqui tradição e qualidade caminham juntas todos os dias.
       </p>
     </div>
 
-    <img class="reveal"
-      src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80">
+    <div class="about-image reveal">
+      <img src="assets/images/padaria.jpg" alt="Nossa Padaria">
+    </div>
   </div>
 </section>
 
 <!-- MAPA -->
-<section>
-  <h2 class="t
+<section class="section">
+  <h2 class="section-title reveal">Onde Estamos</h2>
+
+  <div class="map-container reveal">
+    <iframe
+      src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info-bar reveal">
+  <div>
+    <strong>📍 Endereço</strong>
+    <span>R. Adelino Duarte, 490 – Quatá/SP</span>
+  </div>
+
+  <div>
+    <strong>⏰ Horário</strong>
+    <span>Todos os dias • 05h às 22h</span>
+  </div>
+
+  <div>
+    <strong>📲 WhatsApp</strong>
+    <span>(18) 99695-5697</span>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 Padaria Ki Pão • Todos os direitos reservados
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+<script src="js/scroll-effects.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>
