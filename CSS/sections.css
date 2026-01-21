@@ -1,46 +1,36 @@
 .hero {
-  height: 100vh;
-  background: url("../assets/images/hero.jpg") center/cover no-repeat;
   position: relative;
+  height: 100vh;
+  background: url("../assets/images/hero-bread.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
+  padding: 0 8%;
 }
 
-.overlay {
+.hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    rgba(43,27,18,.75),
-    rgba(43,27,18,.9)
+    rgba(59, 36, 22, 0.85),
+    rgba(59, 36, 22, 0.6)
   );
 }
 
 .hero-content {
   position: relative;
-  color: var(--beige-100);
+  max-width: 600px;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin: 1rem 0;
 }
 
 .hero p {
-  max-width: 520px;
-  margin-top: 16px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 48px;
-}
-
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 16px;
-  border: none;
-}
-
-footer {
-  background: var(--brown-900);
-  color: var(--beige-100);
-  padding: 32px;
-  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
 }
