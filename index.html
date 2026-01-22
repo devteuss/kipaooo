@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Padaria Ki Pão • Tradição Artesanal</title>
+  <title>Padaria Ki Pão • Tradição que dá água na boca</title>
 
+  <!-- FAVICON -->
   <link rel="icon" href="assets/icons/favicon.png" />
 
   <!-- CSS -->
@@ -16,99 +17,143 @@
   <link rel="stylesheet" href="CSS/animations.css" />
   <link rel="stylesheet" href="CSS/light.css" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- FONTES -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
 
-<!-- SKELETON -->
-<div id="skeleton"></div>
+<!-- LOADER / SKELETON -->
+<div id="loader" class="loader">
+  <span>KI PÃO</span>
+</div>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a
+  href="https://wa.me/5518996955697"
+  target="_blank"
+  class="whatsapp-float"
+  aria-label="Fale conosco no WhatsApp"
+>
+  💬
+  <span class="tooltip">Fale conosco</span>
+</a>
 
 <!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <span class="status-open">
-      <span class="dot"></span> Aberto agora
-    </span>
+<header class="hero parallax">
+  <div class="hero-overlay"></div>
+
+  <div class="container reveal">
+    <span class="status-open"></span>
 
     <h1>Padaria Ki Pão</h1>
 
     <p>
-      Tradição artesanal, pães quentinhos e doces preparados
-      diariamente com carinho.
+      Tradição, forno quente e sabor artesanal que conquista gerações todos os dias.
     </p>
 
-    <a
-      href="https://wa.me/5518996955697"
-      target="_blank"
-      class="btn-whatsapp"
-    >
-      Pedir no WhatsApp
-    </a>
+    <div class="hero-actions">
+      <a href="https://wa.me/5518996955697" target="_blank" class="btn btn-whatsapp magnetic">
+        Pedir no WhatsApp
+      </a>
+
+      <a href="#produtos" class="btn btn-outline magnetic">
+        Ver Produtos
+      </a>
+    </div>
   </div>
 </header>
 
-<!-- SOBRE -->
-<section class="section feature">
-  <div class="container">
-    <h2>Artesanal de Verdade</h2>
-
-    <p>
-      Cada pão é preparado com fermentação cuidadosa,
-      ingredientes selecionados e o respeito pelas receitas
-      que atravessam gerações.
-    </p>
-  </div>
-</section>
-
 <!-- PRODUTOS -->
-<section class="section">
+<section id="produtos" class="section">
   <div class="container">
-    <h2>Destaques do Dia</h2>
+    <h2 class="section-title reveal">Destaques do Dia</h2>
 
     <div class="products-grid">
-      <article class="product-card">
-        <img src="assets/images/pao.jpg" alt="Pão francês">
+      <article class="product-card reveal">
+        <img src="assets/images/pao-frances.jpg" alt="Pão Francês" />
         <h3>Pão Francês</h3>
         <p>Crocante por fora, macio por dentro.</p>
       </article>
 
-      <article class="product-card">
-        <img src="assets/images/bolo.jpg" alt="Bolos">
+      <article class="product-card reveal">
+        <img src="assets/images/bolos.jpg" alt="Bolos Caseiros" />
         <h3>Bolos Caseiros</h3>
-        <p>Sabor de casa, feito todos os dias.</p>
+        <p>Receitas tradicionais feitas diariamente.</p>
       </article>
 
-      <article class="product-card">
-        <img src="assets/images/salgado.jpg" alt="Salgados">
+      <article class="product-card reveal">
+        <img src="assets/images/salgados.jpg" alt="Salgados" />
         <h3>Salgados</h3>
-        <p>Perfeitos para qualquer hora.</p>
+        <p>Perfeitos para qualquer hora do dia.</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- SOBRE -->
+<section class="section about-section">
+  <div class="container about-grid">
+    <div class="about-text reveal">
+      <h2>Sobre a Ki Pão</h2>
+      <p>
+        A Padaria Ki Pão nasceu da paixão pelo pão bem feito, daquele cheiro que
+        invade a rua logo cedo. Unimos tradição, ingredientes selecionados e
+        cuidado artesanal para entregar qualidade todos os dias.
+      </p>
+
+      <p>
+        Aqui cada fornada conta uma história, cada cliente faz parte da nossa
+        família e cada produto é preparado com respeito à tradição.
+      </p>
+    </div>
+
+    <div class="about-image reveal">
+      <img src="assets/images/padaria.jpg" alt="Nossa Padaria" />
+    </div>
+  </div>
+</section>
+
 <!-- LOCALIZAÇÃO -->
-<section class="section location">
+<section class="section">
   <div class="container">
-    <h2>Onde Estamos</h2>
+    <h2 class="section-title reveal">Onde Estamos</h2>
 
-    <iframe
-      src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
-      loading="lazy">
-    </iframe>
+    <div class="map-container reveal">
+      <iframe
+        src="https://www.google.com/maps?q=R.+Adelino+Duarte,+490+Quatá+SP&output=embed"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</section>
 
-    <ul class="info-list">
-      <li>📍 R. Adelino Duarte, 490 – Quatá/SP</li>
-      <li>⏰ Todos os dias • 05h às 22h</li>
-      <li>📲 (18) 99695-5697</li>
-    </ul>
+<!-- INFO BAR -->
+<section class="info-bar reveal">
+  <div>
+    <strong>📍 Endereço</strong>
+    <span>R. Adelino Duarte, 490 – Quatá/SP</span>
+  </div>
+
+  <div>
+    <strong>⏰ Horário</strong>
+    <span>Todos os dias • 05h às 22h</span>
+  </div>
+
+  <div>
+    <strong>📲 WhatsApp</strong>
+    <span>(18) 99695-5697</span>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
   © 2026 Padaria Ki Pão • Todos os direitos reservados
 </footer>
 
