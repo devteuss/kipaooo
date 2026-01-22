@@ -1,12 +1,7 @@
 window.addEventListener("load", () => {
-  const skeleton = document.getElementById("skeleton");
-
-  setTimeout(() => {
-    skeleton.style.opacity = "0";
-    skeleton.style.pointerEvents = "none";
-
-    setTimeout(() => {
-      skeleton.remove();
-    }, 500);
-  }, 1200);
+  const loader = document.getElementById("loader");
+  if (loader) {
+    loader.style.opacity = "0";
+    setTimeout(() => loader.remove(), 600);
+  }
 });
